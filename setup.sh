@@ -22,7 +22,7 @@ echo "done"
 #specified in $files
 for dir_file in $dir_files; do
   echo "moving any existing dotfiles from ~ to $dotfiles_old ..."
-  mv ~/$dir_file $dotfiles_old
+  mv ~/.$dir_file $dotfiles_old
   echo "creating symbolic link to $dir_file in home directory"
   ln -s $dir/$dir_file ~/.$dir_file
 done

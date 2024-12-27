@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/oluwatosin/.oh-my-zsh
+export ZSH=/home/mattoranking/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -62,10 +62,6 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-export NVM_DIR="$HOME/.nvm"
-  . "$(brew --prefix nvm)/nvm.sh"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -90,35 +86,20 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
+
+export PATH="$PATH:/home/mattoranking/.scripts_ws"
+
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ll="ls -l"
 alias cls="cl.sh"
 alias cl="clear"
 alias trash="trash.sh"
 alias clrep="cleanrepo.sh"
 alias ff="filefinder.sh"
-
-alias mongod="mongod --dbpath ~/mongodb/data/db"
+alias gte="gnome-text-editor"
 
 alias zshconfig="vi ~/.zshrc"
 alias vrc="vi ~/.vimrc"
-alias envconfig="vi ~/Projects/config/env.sh"
 plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
 
-export EDITOR="/usr/local/bin/mate -w"
-export PATH="/usr/local/mysql/bin:$PATH"
-export PATH="$PATH:/Users/oluwatosin/.scripts_ws"
-export PATH="$PATH:/Users/oluwatosin/golang/bin"
-export PATH="$PATH:/usr/local/go/bin"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PATH="$PATH:/Users/oluwatosin/.composer/vendor/bin"
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/Users/oluwatosin/Documents/Setups/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/Users/oluwatosin/Documents/Setups/google-cloud-sdk/completion.zsh.inc'

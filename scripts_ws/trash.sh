@@ -1,1 +1,1 @@
-mv $1 ~/.Trash
+mv $1 ~/.local/share/Trash/files
